@@ -39,7 +39,6 @@ brew cask install wkhtmltopdf
 brew cask install virtualbox
 brew cask install wireshark
 brew cask install disk-inventory-x
-brew cask install dash
 brew cask install fontplop
 brew cask install recordit
 brew cask install hyperdock
@@ -55,6 +54,58 @@ brew cask install quicklook-json
 brew cask install betterzip
 brew cask install qlimagesize
 brew cask install webpquicklook
+
+# install dash with cheatsheets stack overflow and user contributes stuff
+brew cask install dash
+open "dash-install://repo_name=Cheat Sheets&entry_name=Git"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Docker"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Dockerfile"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Licenses"
+open "dash-install://repo_name=Cheat Sheets&entry_name=npm"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Regular Expressions"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Chrome Developer Tools"
+open "dash-install://repo_name=Cheat Sheets&entry_name=HTML Entities"
+open "dash-install://repo_name=Cheat Sheets&entry_name=HTML Head Elements"
+open "dash-install://repo_name=Cheat Sheets&entry_name=HTTP Header Fields"
+open "dash-install://repo_name=Cheat Sheets&entry_name=HTTP Status Codes"
+open "dash-install://repo_name=Cheat Sheets&entry_name=Mac Startup Keys"
+open "dash-install://repo_name=Cheat Sheets&entry_name=MIME Types"
+open "dash-install://repo_name=Cheat Sheets&entry_name=PHPUnit in Laravel"
+open "dash-install://repo_name=Cheat Sheets&entry_name=You Might Not Need jQuery"
+open "dash-install://repo_name=Stack Overflow&entry_name=JavaScript (Offline)"
+open "dash-install://repo_name=Stack Overflow&entry_name=JavaScript (Offline)"
+open "dash-install://repo_name=User Contributed&entry_name=Google Maps"
+# cheatsheets are not supported yet
+# open "dash-install://repo_name=Main Docsets&entry_name=Apache HTTP Server"
+# open "dash-install://repo_name=Main Docsets&entry_name=MongoDB"
+# open "dash-install://repo_name=Main Docsets&entry_name=Mongoose"
+# open "dash-install://repo_name=Main Docsets&entry_name=Bash"
+# open "dash-install://repo_name=Main Docsets&entry_name=AppleScript"
+# open "dash-install://repo_name=Main Docsets&entry_name=Chai"
+# open "dash-install://repo_name=Main Docsets&entry_name=Mocha"
+# open "dash-install://repo_name=Main Docsets&entry_name=Cordova"
+# open "dash-install://repo_name=Main Docsets&entry_name=Craft"
+# open "dash-install://repo_name=Main Docsets&entry_name=HTML"
+# open "dash-install://repo_name=Main Docsets&entry_name=CSS"
+# open "dash-install://repo_name=Main Docsets&entry_name=D3JS"
+# open "dash-install://repo_name=Main Docsets&entry_name=Docker"
+# open "dash-install://repo_name=Main Docsets&entry_name=JavaScript"
+# open "dash-install://repo_name=Main Docsets&entry_name=ElasticSearch"
+# open "dash-install://repo_name=Main Docsets&entry_name=Express"
+# open "dash-install://repo_name=Main Docsets&entry_name=Gulp"
+# open "dash-install://repo_name=Main Docsets&entry_name=Jekyll"
+# open "dash-install://repo_name=Main Docsets&entry_name=jQuery"
+# open "dash-install://repo_name=Main Docsets&entry_name=Laravel"
+# open "dash-install://repo_name=Main Docsets&entry_name=Markdown"
+# open "dash-install://repo_name=Main Docsets&entry_name=MomentJS"
+# open "dash-install://repo_name=Main Docsets&entry_name=MySQL"
+# open "dash-install://repo_name=Main Docsets&entry_name=NodeJS"
+# open "dash-install://repo_name=Main Docsets&entry_name=PHP"
+# open "dash-install://repo_name=Main Docsets&entry_name=PHPUnit"
+# open "dash-install://repo_name=Main Docsets&entry_name=Sass"
+# open "dash-install://repo_name=Main Docsets&entry_name=SVG"
+# open "dash-install://repo_name=Main Docsets&entry_name=Twig"
+# open "dash-install://repo_name=Main Docsets&entry_name=VueJS"
 
 # apple store apps
 mas install 409201541 # Pages
