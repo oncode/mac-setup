@@ -28,7 +28,6 @@ mv ./.hgignore_global ~/.hgignore_global
 mv ./n ~/n
 
 # application data and preferences
-mv ./Dash ~/Library/Application\ Support/Dash
 mv ./User ~/Library/Application\ Support/Code/User
 mv ./Banana.ch ~/Library/Application\ Support/Banana.ch
 mv ./ch.banana.Banana.plist ~/Library/Preferences/ch.banana.Banana.plist

@@ -36,7 +36,6 @@ rm -f code.txt
 7z a backup.zip ~/n
 
 # application data and preferences
-7z a backup.zip ~/Library/Application\ Support/Dash
 7z a backup.zip ~/Library/Application\ Support/Code/User
 7z a backup.zip ~/Library/Application\ Support/Banana.ch
 7z a backup.zip ~/Library/Preferences/ch.banana.Banana.plist
