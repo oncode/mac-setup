@@ -8,7 +8,7 @@
 source "$BASH_STUFF/mac-setup/vendor/bash-powerline/bash-powerline.sh"
 
 # set default editor
-export EDITOR=$(which slap)
+export EDITOR=slap
 
 # disables statistics that brew collects
 export HOMEBREW_NO_ANALYTICS=1
@@ -38,13 +38,13 @@ alias now='date +"%T"'
 alias nowdate='date +"%d.%m.%Y"'
 
 alias f='open -a Finder ./'
-alias edit='$EDITOR'
+alias edit=$EDITOR
 alias path='echo -e ${PATH//:/\\n}'
 alias flushdns='dscacheutil -flushcache'
 alias openports='sudo lsof -i | grep LISTEN'
 
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
-alias edithosts='sudo $EDITOR /etc/hosts'
+alias edithosts="sudo $EDITOR /etc/hosts"
 
 alias glog="git log --oneline --decorate --all --graph"
 
@@ -65,7 +65,7 @@ spotlight() { mdfind "kMDItemDisplayName == '$@'wc"; }
 alias nf='echo $(ls -1 | wc -l)'
 
 # always list directory contents upon 'cd'
-cd() { builtin cd "$@"; la; } 
+cd() { builtin cd "$@"; la; }
 
 # makes new directory and jumps inside
 mc() { mkdir -p "$1" && cd "$1"; }
