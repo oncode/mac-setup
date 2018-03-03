@@ -6,7 +6,7 @@ My personal Mac backup/installation/restore/update process for a clean Mac insta
 
 ```bash
 # configure google drive as backup directory
-echo export BACKUP=~/Google\ Drive >> ~/.bash_profile
+echo export BACKUP=~/Google\ Drive/Privat/Software/Backup >> ~/.bash_profile
 # configure path to bash stuff
 echo export BASH_STUFF=~/.bash_stuff >> ~/.bash_profile
 # create the bash stuff folder
