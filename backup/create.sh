@@ -25,11 +25,15 @@ rm -f code.txt
 
 # config files
 7z a backup.zip ~/.ssh
+7z a backup.zip ~/.docker
 7z a backup.zip ~/.vscode
+7z a backup.zip ~/.subversion
+7z a backup.zip ~/.slap
 7z a backup.zip ~/.httpie
 7z a backup.zip ~/.config/filezilla
 7z a backup.zip ~/.gitignore_global
 7z a backup.zip ~/.hgignore_global
+7z a backup.zip ~/n
 
 # application data and preferences
 7z a backup.zip ~/Library/Application\ Support/Dash

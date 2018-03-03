@@ -17,11 +17,15 @@ mysql -u 'root' -p < backup.sql
 
 # config files
 mv ./.ssh ~/.ssh
+mv ./.docker ~/.docker
 mv ./.vscode ~/.vscode
+mv ./.slap ~/.slap
+mv ./.subversion ~/.subversion
 mv ./.httpie ~/.httpie
 mv ./filezilla ~/.config/filezilla
 mv ./.gitignore_global ~/.gitignore_global
 mv ./.hgignore_global ~/.hgignore_global
+mv ./n ~/n
 
 # application data and preferences
 mv ./Dash ~/Library/Application\ Support/Dash
