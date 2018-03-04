@@ -65,5 +65,12 @@ npm install -g source-map-explorer
 npm install -g git-standup
 npm install -g git-open
 
+cd ~/Downloads
+wget https://github.com/torakiki/sejda/releases/download/v3.2.48/sejda-console-3.2.48-bin.zip
+7z x sejda-console-3.2.48-bin.zip
+sudo install -d -o $(whoami) -g admin /usr/local/Sejda
+mv sejda-console-3.2.48 /usr/local/Sejda/sejda-console-3.2.48
+ln -s /usr/local/Sejda/sejda-console-3.2.48/bin/sejda-console /usr/local/bin/sejda-console
+
 echo 'Finished installing dev tools'
 tput bel
