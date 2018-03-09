@@ -29,6 +29,7 @@ brew cask install sequel-pro
 brew cask install tableplus
 brew cask install skitch
 brew cask install sketch
+brew cask install imageoptim
 brew cask install slack
 brew cask install discord
 brew cask install spectacle
@@ -120,6 +121,7 @@ sudo tmutil addexclusion -p ~/Dropbox
 
 # install also some fonts
 brew tap caskroom/fonts
+brew cask install font-dosis
 brew cask install font-open-sans
 brew cask install font-roboto
 brew cask install font-roboto-condensed
