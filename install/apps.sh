@@ -32,6 +32,7 @@ brew cask install sketch
 brew cask install imageoptim
 brew cask install slack
 brew cask install discord
+brew cask install etcher
 brew cask install spectacle
 brew cask install spotify
 brew cask install free-ruler
