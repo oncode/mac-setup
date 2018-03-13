@@ -70,6 +70,7 @@ source "$BASH_STUFF/mac-setup/backup/restore.sh"
     - Choose as default: "Shell" -> "Als Standard verwenden"
 
 3. Open programms, add licences and change configuration where needed (see also [`tweakings`](tweakings) folder)
+4. Change wallpaper to wallpaper.jpg
 4. Install MacOS updates (if any available)
 5. Restart Mac
 
