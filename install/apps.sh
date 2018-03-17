@@ -23,6 +23,7 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install grandtotal
 brew cask install timings
+brew cask install usage
 brew cask install keeweb
 brew cask install postman
 brew cask install sequel-pro
