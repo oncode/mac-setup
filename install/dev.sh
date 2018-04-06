@@ -50,6 +50,7 @@ brew install ruby
 gem install -n /usr/local/bin sass
 gem install -n /usr/local/bin sass-json-vars
 gem install -n /usr/local/bin compass
+gem install -n /usr/local/bin scss_lint
 
 # phyton and pip packages
 brew install python
@@ -64,6 +65,11 @@ npm install -g yo
 npm install -g source-map-explorer
 npm install -g git-standup
 npm install -g git-open
+npm install -g gulp-cli
+npm install -g argus-eyes
+npm install -g pa11y
+npm install -g csscomb
+npm install -g @vue-cli
 
 cd ~/Downloads
 wget https://github.com/torakiki/sejda/releases/download/v3.2.48/sejda-console-3.2.48-bin.zip
