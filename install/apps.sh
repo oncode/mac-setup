@@ -117,6 +117,16 @@ mas install 409183694 # Keynote
 mas install 408981434 # iMovie
 mas install 595191960 # CopyClip
 
+# docker images
+docker pull php:7.1-apache
+docker pull php:7.0-apache
+docker pull php:5.6-apache
+docker pull mysql
+docker pull mariadb
+docker pull postgres
+docker pull mongo
+docker pull redis
+
 # prevent creating a backup of the files in the cloud
 sudo tmutil addexclusion -p ~/Google\ Drive
 sudo tmutil addexclusion -p ~/Dropbox
