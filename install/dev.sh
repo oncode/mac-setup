@@ -23,6 +23,7 @@ git config --global core.editor nano
 git config --global pull.rebase true
 
 brew install yarn --without-node # without node so the n version is used
+brew install composer
 brew install redis
 brew install mongodb
 brew install mas
@@ -69,7 +70,9 @@ npm install -g gulp-cli
 npm install -g argus-eyes
 npm install -g pa11y
 npm install -g csscomb
+npm install -g grunt-cli
 npm install -g @vue-cli
+npm install -g percollate
 
 cd ~/Downloads
 wget https://github.com/torakiki/sejda/releases/download/v3.2.48/sejda-console-3.2.48-bin.zip
