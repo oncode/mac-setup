@@ -9,6 +9,8 @@ My personal Mac backup/installation/restore/update process for a clean Mac insta
 echo export BACKUP=~/Google\ Drive/Privat/Software/Backup >> ~/.bash_profile
 # configure path to bash stuff
 echo export BASH_STUFF=~/.bash_stuff >> ~/.bash_profile
+# read .bash_profile changes
+source ~/.bash_profile
 # create the bash stuff folder
 mkdir "$BASH_STUFF" && cd "$BASH_STUFF"
 # clone this repo into bash stuff folder
