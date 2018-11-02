@@ -42,6 +42,7 @@ brew cask install wkhtmltopdf
 brew cask install virtualbox
 brew cask install wireshark
 brew cask install disk-inventory-x
+brew cask install gas-mask
 brew cask install fontplop
 brew cask install recordit
 brew cask install hyperdock
