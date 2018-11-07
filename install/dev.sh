@@ -24,6 +24,7 @@ git config --global pull.rebase true
 
 brew install yarn --without-node # without node so the n version is used
 brew install composer
+brew install GraphicsMagick
 brew install redis
 brew install mongodb
 brew install mas
