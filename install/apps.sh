@@ -40,6 +40,7 @@ brew cask install free-ruler
 brew cask install the-unarchiver
 brew cask install wkhtmltopdf
 brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 brew cask install wireshark
 brew cask install disk-inventory-x
 brew cask install gas-mask
@@ -49,6 +50,8 @@ brew cask install hyperdock
 brew cask install appcleaner
 brew cask install ccleaner
 brew cask install teamviewer
+brew cask install karabiner-elements
+brew cask install colour-contrast-analyser
 
 # quicklook plugins
 brew cask install qlcolorcode
@@ -56,7 +59,8 @@ brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install betterzip
-brew cask install qlimagesize
+brew cask install ql
+size
 brew cask install webpquicklook
 
 # install dash with cheatsheets stack overflow and user contributes stuff
