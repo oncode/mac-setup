@@ -15,8 +15,9 @@ sudo xcodebuild -license accept
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
-# n
-curl -L https://git.io/n-install | bash
+# nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.bash_profile
 
 # git
 brew install git
@@ -77,7 +78,6 @@ npm install -g argus-eyes
 npm install -g pa11y
 npm install -g csscomb
 npm install -g grunt-cli
-npm install -g @vue-cli
 npm install -g percollate
 
 cd ~/Downloads
