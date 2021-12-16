@@ -66,6 +66,7 @@ brew unlink python && brew link python
 pip install ImageScraper
 
 # global npm packages
+npm install -g firebase-tools
 npm install -g npm-check
 npm install -g how2
 npm install -g slap@latest
