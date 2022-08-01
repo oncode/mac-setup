@@ -7,13 +7,22 @@ set -e
 
 echo 'Start installing dev tools'
 
+# switch to bash
+chsh -s /bin/bash
+
 # brew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/oncode/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
+source ~/.bash_profile
 
 # nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-source ~/.bash_profile
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# install different node versions
+nvm install 16.15.0
+nvm install 14.11.0
+nvm install 6.2.1
 
 # git
 brew install git
@@ -21,14 +30,12 @@ brew unlink git && brew link git
 git config --global user.name 'Manuel Sommerhalder'
 git config --global user.email 'hello@oncode.ch'
 git config --global core.editor nano
-git config --global pull.rebase true
 
-brew install yarn --without-node # without node so the n version is used
+# brew install yarn --without-node # without node so the n version is used
 brew install composer
 brew install graphicsmagick
 brew install imagemagick
 brew install redis
-brew install mongodb
 brew install mas
 brew install fd
 brew install exa
@@ -41,7 +48,7 @@ brew install emojify
 brew install p7zip
 brew install nmap
 brew install mozjpeg
-brew install ffmpeg --with-chromaprint --with-fdk-aac --with-libass --with-librsvg --with-libsoxr --with-libssh --with-tesseract --with-libvidstab --with-opencore-amr --with-openh264 --with-openjpeg --with-openssl --with-rtmpdump --with-rubberband --with-sdl2 --with-snappy --with-tools --with-webp --with-x265 --with-xz --with-zeromq --with-zimg
+brew install ffmpeg
 
 # mysql
 brew install mysql
@@ -51,10 +58,10 @@ brew services stop mysql
 
 # ruby and ruby gems
 brew install ruby
-gem install -n /usr/local/bin sass
-gem install -n /usr/local/bin sass-json-vars
-gem install -n /usr/local/bin compass
-gem install -n /usr/local/bin scss_lint
+sudo gem install -n /usr/local/bin sass
+sudo gem install -n /usr/local/bin sass-json-vars
+sudo gem install -n /usr/local/bin compass
+sudo gem install -n /usr/local/bin scss_lint
 
 # phyton and pip packages
 brew install python
