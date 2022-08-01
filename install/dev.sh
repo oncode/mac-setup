@@ -49,6 +49,7 @@ brew install p7zip
 brew install nmap
 brew install mozjpeg
 brew install ffmpeg
+brew install tree
 
 # mysql
 brew install mysql
