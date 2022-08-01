@@ -7,10 +7,6 @@ set -e
 
 echo 'Start installing dev tools'
 
-# xcode
-xcode-select --install
-sudo xcodebuild -license accept
-
 # brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
