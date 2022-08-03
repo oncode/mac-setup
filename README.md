@@ -21,6 +21,8 @@ source "$BASH_STUFF/mac-setup/backup/create.sh"
 ## Install the Magic
 
 ```bash
+# switch default terminal to bash
+chsh -s /bin/bash
 # this will prompt xcode dev tools installation (confirm)
 git -v
 # create bash profile
