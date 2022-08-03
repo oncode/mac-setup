@@ -7,8 +7,8 @@ set -e
 
 echo 'Start installing dev tools'
 
-# switch to bash
-chsh -s /bin/bash
+# install rosetta for apple silicon macs
+softwareupdate --install-rosetta
 
 # brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
