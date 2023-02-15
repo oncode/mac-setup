@@ -10,6 +10,7 @@ echo 'Start installing apps'
 # get brew cask
 brew tap caskroom/cask
 
+brew install --cask pgadmin4
 brew install --cask dbeaver-community
 brew install --cask docker
 brew install --cask visual-studio-code
@@ -25,6 +26,15 @@ brew install --cask firefox
 brew install --cask grandtotal
 brew install --cask timings
 brew install --cask usage
+brew install --cask docker
+brew install --cask visual-studio-code
+brew install --cask android-file-transfer
+brew install --cask sourcetree
+brew install --cask google-drive
+brew install --cask vlc
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask microsoft-edge
 brew install --cask keeweb
 brew install --cask postman
 brew install --cask sequel-pro
@@ -38,6 +48,8 @@ brew install --cask etcher
 brew install --cask spectacle
 brew install --cask spotify
 brew install --cask free-ruler
+brew install --cask balenaetcher
+brew install --cask spotify
 brew install --cask the-unarchiver
 brew install --cask wkhtmltopdf
 brew install --cask virtualbox
@@ -48,6 +60,7 @@ brew install --cask gas-mask
 brew install --cask fontplop
 brew install --cask recordit
 brew install --cask hyperdock
+brew install --cask recordit
 brew install --cask appcleaner
 brew install --cask ccleaner
 brew install --cask teamviewer
@@ -60,8 +73,7 @@ brew install --cask qlstephen
 brew install --cask qlmarkdown
 brew install --cask quicklook-json
 brew install --cask betterzip
-brew install --cask ql
-size
+brew install --cask qlimagesize
 brew install --cask webpquicklook
 
 # install dash with cheatsheets stack overflow and user contributes stuff
@@ -116,12 +128,15 @@ open "dash-install://repo_name=User Contributed&entry_name=Google Maps"
 # open "dash-install://repo_name=Main Docsets&entry_name=Twig"
 # open "dash-install://repo_name=Main Docsets&entry_name=VueJS"
 
+brew install --cask qlimagesize
+brew install --cask webpquicklook
+
 # apple store apps
 mas install 409201541 # Pages
-mas install 409203825 # Numbers
-mas install 409183694 # Keynote
-mas install 408981434 # iMovie
-mas install 595191960 # CopyClip
+# mas install 409203825 # Numbers
+# mas install 409183694 # Keynote
+# mas install 408981434 # iMovie
+# mas install 595191960 # CopyClip
 
 # docker images
 docker pull php:7.1-apache
@@ -134,11 +149,13 @@ docker pull mongo
 docker pull redis
 
 # prevent creating a backup of the files in the cloud
-sudo tmutil addexclusion -p ~/Google\ Drive
+sudo tmutil addexclusion -p ~/My\ Drive
 sudo tmutil addexclusion -p ~/Dropbox
 
 # install also some fonts
 brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
+brew install svn
 brew install --cask font-dosis
 brew install --cask font-open-sans
 brew install --cask font-roboto

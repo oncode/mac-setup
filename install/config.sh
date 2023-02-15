@@ -22,13 +22,6 @@ sudo spctl --master-disable
 cd ~
 mkdir Web
 
-# remove folders not needed
-sudo rm -rf ~/Music
-sudo rm -rf ~/Movies
-sudo rm -rf ~/Documents
-sudo rm -rf ~/Pictures
-sudo rm -rf ~/Public
-
 # prevent directories from being backuped
 sudo tmutil addexclusion -p ~/Downloads
 sudo tmutil addexclusion -p ~/Desktop
@@ -39,9 +32,7 @@ chflags nohidden ~/Library
 sudo chflags nohidden /Volumes
 
 # disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-# set the timezone
-sudo systemsetup -settimezone "Europe/Zurich" > /dev/null
+sudo nvram StartupMute=%01
 
 # expand save panel by default
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
@@ -59,9 +50,6 @@ defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 # show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
-# require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # disable automatic capitalization as it’s annoying when typing code
 defaults write -g NSAutomaticCapitalizationEnabled -bool false
@@ -221,7 +209,7 @@ defaults write com.apple.Finder FXPreferredViewStyle "Nlsv"
 defaults write com.apple.finder PathBarRootAtHome -bool TRUE
 # disable extension change warning
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-# allow quitting via ⌘ + Q; doing so will also hide desktop icons
+# allow quitting via ⌘ + Q, doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 # set previously created Web directory as the default location for new Finder windows
 defaults write com.apple.finder NewWindowTarget -string "PfLo"

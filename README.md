@@ -2,22 +2,7 @@
 
 My personal Mac backup/installation/restore/update process for a clean Mac installation.
 
-## Install the Magic
-
-```bash
-# configure google drive as backup directory
-echo export BACKUP=~/Google\ Drive/Privat/Software/Backup >> ~/.bash_profile
-# configure path to bash stuff
-echo export BASH_STUFF=~/.bash_stuff >> ~/.bash_profile
-# read .bash_profile changes
-source ~/.bash_profile
-# create the bash stuff folder
-mkdir "$BASH_STUFF" && cd "$BASH_STUFF"
-# clone this repo into bash stuff folder
-git clone https://github.com/oncode/mac-setup.git
-```
-
-## Backup Current Data
+## Backup Data from current Mac (if possible)
 
 Run following script to create `backup.zip` inside the backup folder:
 
@@ -32,6 +17,27 @@ source "$BASH_STUFF/mac-setup/backup/create.sh"
 - config data from important apps
 - list with installed apps
 - list with installed vs code exensions
+
+## Install the Magic
+
+```bash
+# switch default terminal to bash
+chsh -s /bin/bash
+# this will prompt xcode dev tools installation (confirm)
+git -v
+# create bash profile
+touch ~/.bash_profile
+# configure google drive as backup directory
+echo export BACKUP=~/My\\ Drive/Privat/Software/Backup >> ~/.bash_profile
+# configure path to bash stuff
+echo export BASH_STUFF=~/.bash_stuff >> ~/.bash_profile
+# read .bash_profile changes
+source ~/.bash_profile
+# create the bash stuff folder
+mkdir "$BASH_STUFF" && cd "$BASH_STUFF"
+# clone this repo into bash stuff folder
+git clone https://github.com/oncode/mac-setup.git
+```
 
 ## Setup Clean Mac
 
@@ -59,11 +65,9 @@ source "$BASH_STUFF/mac-setup/backup/restore.sh"
 
 1. Install following Apps:
 
-    - Airmail
     - Photoshop / Illustrator / InDesign
     - Microsoft Office
     - Open Office (cask seems to be broken)
-    - Fenêtre
     - uTorrent
 
 2. Install Terminal profile
