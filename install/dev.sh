@@ -36,6 +36,8 @@ brew install composer
 brew install graphicsmagick
 brew install imagemagick
 brew install redis
+brew install mongodb
+brew install postgresql
 brew install mas
 brew install fd
 brew install exa
