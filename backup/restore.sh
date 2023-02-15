@@ -33,5 +33,9 @@ mv ./Banana.ch ~/Library/Application\ Support/Banana.ch
 mv ./ch.banana.Banana.plist ~/Library/Preferences/ch.banana.Banana.plist
 mv ./ch.banana.banana8.plist ~/Library/Preferences/ch.banana.banana8.plist
 
+# fix ssh permisssions
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/*
+
 echo 'Restoring backup finished'
 tput bel

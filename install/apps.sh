@@ -10,61 +10,62 @@ echo 'Start installing apps'
 # get brew cask
 brew tap caskroom/cask
 
-brew cask install docker
-brew cask install visual-studio-code
-brew cask install android-file-transfer
-brew cask install java
-brew cask install filezilla
-brew cask install sourcetree
-brew cask install google-backup-and-sync
-brew cask install dropbox
-brew cask install vlc
-brew cask install google-chrome
-brew cask install firefox
-brew cask install grandtotal
-brew cask install timings
-brew cask install usage
-brew cask install keeweb
-brew cask install postman
-brew cask install sequel-pro
-brew cask install tableplus
-brew cask install skitch
-brew cask install sketch
-brew cask install imageoptim
-brew cask install slack
-brew cask install discord
-brew cask install etcher
-brew cask install spectacle
-brew cask install spotify
-brew cask install free-ruler
-brew cask install the-unarchiver
-brew cask install wkhtmltopdf
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install wireshark
-brew cask install disk-inventory-x
-brew cask install gas-mask
-brew cask install fontplop
-brew cask install recordit
-brew cask install hyperdock
-brew cask install appcleaner
-brew cask install ccleaner
-brew cask install teamviewer
-brew cask install karabiner-elements
-brew cask install colour-contrast-analyser
+brew install --cask dbeaver-community
+brew install --cask docker
+brew install --cask visual-studio-code
+brew install --cask android-file-transfer
+brew install --cask java
+brew install --cask filezilla
+brew install --cask sourcetree
+brew install --cask google-backup-and-sync
+brew install --cask dropbox
+brew install --cask vlc
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask grandtotal
+brew install --cask timings
+brew install --cask usage
+brew install --cask keeweb
+brew install --cask postman
+brew install --cask sequel-pro
+brew install --cask tableplus
+brew install --cask skitch
+brew install --cask sketch
+brew install --cask imageoptim
+brew install --cask slack
+brew install --cask discord
+brew install --cask etcher
+brew install --cask spectacle
+brew install --cask spotify
+brew install --cask free-ruler
+brew install --cask the-unarchiver
+brew install --cask wkhtmltopdf
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+brew install --cask wireshark
+brew install --cask disk-inventory-x
+brew install --cask gas-mask
+brew install --cask fontplop
+brew install --cask recordit
+brew install --cask hyperdock
+brew install --cask appcleaner
+brew install --cask ccleaner
+brew install --cask teamviewer
+brew install --cask karabiner-elements
+brew install --cask colour-contrast-analyser
 
 # quicklook plugins
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install betterzip
-brew cask install ql
+brew install --cask qlcolorcode
+brew install --cask qlstephen
+brew install --cask qlmarkdown
+brew install --cask quicklook-json
+brew install --cask betterzip
+brew install --cask ql
 size
-brew cask install webpquicklook
+brew install --cask webpquicklook
 
 # install dash with cheatsheets stack overflow and user contributes stuff
-brew cask install dash
+brew install --cask dash
 open "dash-install://repo_name=Cheat Sheets&entry_name=Git"
 open "dash-install://repo_name=Cheat Sheets&entry_name=Docker"
 open "dash-install://repo_name=Cheat Sheets&entry_name=Dockerfile"
@@ -138,16 +139,16 @@ sudo tmutil addexclusion -p ~/Dropbox
 
 # install also some fonts
 brew tap caskroom/fonts
-brew cask install font-dosis
-brew cask install font-open-sans
-brew cask install font-roboto
-brew cask install font-roboto-condensed
-brew cask install font-raleway
-brew cask install font-oswald
-brew cask install font-noto-sans
-brew cask install font-fontawesome
-brew cask install font-material-icons
-brew cask install font-materialdesignicons-webfont
+brew install --cask font-dosis
+brew install --cask font-open-sans
+brew install --cask font-roboto
+brew install --cask font-roboto-condensed
+brew install --cask font-raleway
+brew install --cask font-oswald
+brew install --cask font-noto-sans
+brew install --cask font-fontawesome
+brew install --cask font-material-icons
+brew install --cask font-materialdesignicons-webfont
 
 # disable the all too sensitive backswipe on trackpads
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
